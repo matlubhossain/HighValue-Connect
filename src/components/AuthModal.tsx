@@ -61,7 +61,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/75 backdrop-blur-xs">
       <div className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
-        
+
         {/* Header */}
         <div className="p-5 bg-[#0B1220] text-white flex items-center justify-between border-b border-slate-800">
           <div>
@@ -154,22 +154,20 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setRole('client')}
-                  className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all cursor-pointer ${
-                    role === 'client'
+                  className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all cursor-pointer ${role === 'client'
                       ? 'bg-white text-slate-900 shadow-xs'
                       : 'text-slate-500 hover:text-slate-900'
-                  }`}
+                    }`}
                 >
                   Enterprise Client
                 </button>
                 <button
                   type="button"
                   onClick={() => setRole('provider')}
-                  className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all cursor-pointer ${
-                    role === 'provider'
+                  className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all cursor-pointer ${role === 'provider'
                       ? 'bg-white text-slate-900 shadow-xs'
                       : 'text-slate-500 hover:text-slate-900'
-                  }`}
+                    }`}
                 >
                   Service Provider
                 </button>
